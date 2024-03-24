@@ -141,7 +141,7 @@ on the specific device platform.
     #include <wolfssl/wolfcrypt/port/nxp/se050_port.h>
 #endif
 
-
+#undef USE_INTEL_SPEEDUP
 #if defined(WOLFSSL_X86_64_BUILD) && defined(USE_INTEL_SPEEDUP)
     #if defined(__GNUC__) && ((__GNUC__ < 4) || \
                               (__GNUC__ == 4 && __GNUC_MINOR__ <= 8))

@@ -54,7 +54,7 @@ and Daniel J. Bernstein
     /* 4127 warning constant while(1)  */
     #pragma warning(disable: 4127)
 #endif
-
+#undef USE_INTEL_SPEEDUP
 #if defined(WOLFSSL_X86_64_BUILD) && defined(USE_INTEL_SPEEDUP)
     #include <emmintrin.h>
     #include <immintrin.h>
